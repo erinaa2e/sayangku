@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Love Story ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#000;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+position:relative;
+}
+
+.hero-content{
+animation:fadeUp 2s ease;
+}
+
+.hero h1{
+font-size:6rem;
+font-family:'Great Vibes',cursive;
+}
+
+.hero p{
+font-size:1.2rem;
+margin-top:15px;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#ff4d88;
+color:white;
+text-decoration:none;
+border-radius:50px;
+transition:.4s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+.hearts{
+position:fixed;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:999;
+}
+
+.heart{
+position:absolute;
+color:#ff80ab;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+from{
+transform:translateY(-100px);
+opacity:1;
+}
+to{
+transform:translateY(110vh);
+opacity:0;
+}
+}
+
+section{
+padding:100px 10%;
+}
+
+.title{
+text-align:center;
+font-size:3rem;
+margin-bottom:50px;
+font-family:'Great Vibes',cursive;
+}
+
+.timeline{
+display:grid;
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:20px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:20px;
+transition:.5s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.countdown{
+text-align:center;
+}
+
+.counter-box{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+margin-top:40px;
+}
+
+.box{
+background:rgba(255,255,255,.1);
+padding:25px;
+border-radius:20px;
+min-width:120px;
+}
+
+.box h2{
+font-size:3rem;
+color:#ff8db3;
+}
+
+.letter{
+background:rgba(255,255,255,.08);
+padding:40px;
+border-radius:30px;
+line-height:2;
+font-size:1.1rem;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#111;
+}
+
+.music{
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:1000;
+}
+
+.music audio{
+width:250px;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:4rem;
+}
+
+.title{
+font-size:2.5rem;
+}
+
+.music audio{
+width:180px;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<section class="hero">
+
+<div class="hero-content">
+<h1>Erinna ❤️ Gabrielle</h1>
+<p>
+Every love story is beautiful,
+but ours is my favorite.
+</p>
+
+<a href="#story" class="btn">
+Mulai Cerita
+</a>
+</div>
+
+</section>
+
+<section id="story">
+
+<h2 class="title">Our Journey 💕</h2>
+
+<div class="timeline">
+
+<div class="card">
+<h3>💌 First Meet</h3>
+<p>
+Semuanya berawal dari pertemuan sederhana yang tidak pernah kami sangka akan menjadi kisah terindah.
+</p>
+</div>
+
+<div class="card">
+<h3>🥰 Getting Closer</h3>
+<p>
+Hari demi hari kami semakin dekat, saling memahami, dan berbagi cerita satu sama lain.
+</p>
+</div>
+
+<div class="card">
+<h3>❤️ Falling In Love</h3>
+<p>
+Senyummu menjadi alasanku untuk bahagia setiap hari.
+</p>
+</div>
+
+<div class="card">
+<h3>💍 Future Together</h3>
+<p>
+Kami percaya bahwa cinta bukan hanya tentang hari ini, tetapi juga tentang masa depan bersama.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Gallery Memories 📸</h2>
+
+<div class="gallery">
+
+<img src="1.jpeg">
+
+<img src="2.jpeg">
+
+<img src="3.jpeg">
+
+<img src="4.jpeg">
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2 class="title">Love Letter 💌</h2>
+
+<div class="letter">
+
+Hai Sayangnyaa akuu❤️
+
+<br><br>
+
+Terima kasih sudah hadir dalam hidupku.
+Bersamamu aku menemukan kebahagiaan dalam hal-hal sederhana.
+
+Kamu adalah tempatku pulang ketika lelah,
+tempatku berbagi cerita ketika bahagia,
+dan alasan mengapa aku selalu tersenyum setiap hari.
+
+<br><br>
+
+Aku tidak tahu apa yang akan terjadi di masa depan,
+tetapi aku tahu satu hal:
+
+Aku ingin tetap berjalan bersamamu,
+hari ini, besok, dan seterusnya.
+
+<br><br>
+
+I Love You ❤️
+
+</div>
+
+</section>
+
+<footer>
+Made With ❤️ For Someone Special
+</footer>
+
+<div class="music">
+<audio controls autoplay loop>
+<source src="Jatuh Suka - Tulus _ Lirik Lagu.m4a" type="audio/mpeg">
+</audio>
+</div>
+
+<script>
+
+const startDate = new Date("2025-02-14");
+
+function updateCountdown(){
+
+const now = new Date();
+const diff = now - startDate;
+
+const days = Math.floor(diff/(1000*60*60*24));
+const hours = Math.floor((diff/(1000*60*60))%24);
+const minutes = Math.floor((diff/(1000*60))%60);
+const seconds = Math.floor((diff/1000)%60);
+
+document.getElementById("days").innerText=days;
+document.getElementById("hours").innerText=hours;
+document.getElementById("minutes").innerText=minutes;
+document.getElementById("seconds").innerText=seconds;
+}
+
+setInterval(updateCountdown,1000);
+
+const hearts=document.getElementById("hearts");
+
+for(let i=0;i<50;i++){
+
+let heart=document.createElement("div");
+
+heart.classList.add("heart");
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"%";
+heart.style.fontSize=(Math.random()*25+10)+"px";
+heart.style.animationDuration=(Math.random()*10+5)+"s";
+heart.style.animationDelay=Math.random()*5+"s";
+
+hearts.appendChild(heart);
+}
+
+</script>
+
+</body>
+</html>
